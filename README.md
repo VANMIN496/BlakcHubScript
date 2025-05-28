@@ -61,11 +61,11 @@ local Section = Tab:NewSection("Local Script")
 
 Section:NewToggle("SuperMan", "Super Speed And Super Jump", function(state)
     if state then
-        game.Player.localplayer.character.humanoid.WalkSpeed = 100
-		game.Player.localplayer.character.humanoid.JumpPower = 150
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 150
     else
-        game.Player.localplayer.character.humanoid.WalkSpeed = 16
-		game.Player.localplayer.character.humanoid.JumpPower = 50
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
     end
 end)
 
