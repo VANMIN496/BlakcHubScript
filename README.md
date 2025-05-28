@@ -6,7 +6,7 @@ local Tab = Window:NewTab("Script")
 
 local Section = Tab:NewSection("Local Script")
 
-Section:NewKeybind("Open/Close Gui", "N ShyHub", Enum.KeyCode.N, function()
+Section:NewKeybind("Open/Close Gui", "N BlakcHub", Enum.KeyCode.N, function()
 	Library:ToggleUI()
 end)
 
