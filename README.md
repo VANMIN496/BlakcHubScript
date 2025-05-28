@@ -47,6 +47,45 @@ end)
 
 end)
 
+Section:NewButton("JumpScare", "JumpScare", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TheqopThe/robax/refs/heads/main/jumpscare.lua"))()
+end)
+
+Section:NewButton("Print Blakc", "Blakc", function()
+print ("BlakcHub")
+end)
+
+local Tab = Window:NewTab("Players")
+
+local Section = Tab:NewSection("Local Script")
+
+Section:NewToggle("SuperMan", "Super Speed And Super Jump", function(state)
+    if state then
+        game.Player.localplayer.character.humanoid.WalkSpeed = 100
+		game.Player.localplayer.character.humanoid.JumpPower = 150
+    else
+        game.Player.localplayer.character.humanoid.WalkSpeed = 16
+		game.Player.localplayer.character.humanoid.JumpPower = 50
+    end
+end)
+
+Section:NewSlider("Walkspeed", "Speed", 500, 16, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section:NewSlider("JumpPower", "Jump", 350, 50, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+Section:NewButton("Reset WalkAndJump", "Blakc", function()
+        game.Player.localplayer.character.humanoid.WalkSpeed = 16
+		game.Player.localplayer.character.humanoid.JumpPower = 50
+end)
+
+Section:NewButton("Back/Front/AirJump For PC", "Z for Front X for Back C for AirJump", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rscripts-eng/FE-HUB/refs/heads/main/fe%20flips"))()
+end)
+
 local Tab = Window:NewTab("Combine")
 
 local Section = Tab:NewSection("Local Script")
