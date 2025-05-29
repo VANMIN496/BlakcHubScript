@@ -78,8 +78,8 @@ Section:NewSlider("JumpPower", "Jump", 350, 50, function(s)
 end)
 
 Section:NewButton("Reset WalkAndJump", "Blakc", function()
-        game.Player.localplayer.character.humanoid.WalkSpeed = 16
-		game.Player.localplayer.character.humanoid.JumpPower = 50
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
 end)
 
 Section:NewButton("Back/Front/AirJump For PC", "Z for Front X for Back C for AirJump", function()
@@ -96,3 +96,7 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Infinite-Yield_500"))()
 
 end)
 
+PlayerSection:NewButton("Sword Reach", "Make Hitbox BIGGER!", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Severitylol/Universal-Sword-Reach/main/swordreach.lua')()
+
+end)
