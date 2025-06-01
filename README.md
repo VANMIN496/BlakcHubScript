@@ -277,4 +277,3 @@
     Section:NewButton("Fe Gaze Bypass V4", "Works all games", function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Gaze-bypass-Altered-21081"))()
     end)
-end
