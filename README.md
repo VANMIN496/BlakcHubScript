@@ -10,10 +10,7 @@
         Library:ToggleUI()
     end)
 
-    Section:NewButton("Fly V3 Gui", "Fly", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 
-    end)
 
     Section:NewButton("Chat Spoofer", "Like Sudo", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/4cYHvVmc"))()
@@ -101,6 +98,16 @@
     Section:NewButton("Back/Front/AirJump For PC", "Z for Front X for Back C for AirJump", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/rscripts-eng/FE-HUB/refs/heads/main/fe%20flips"))()
     end)
+    
+    Section:NewButton("Fly V3 Gui", "Fly", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+
+    end)
+
+    Section:NewButton("Executor", "Execute", function()
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-fxe0-V1-open-source-33446"))()
+
+    end)
 
     local Tab = Window:NewTab("Combine")
 
@@ -111,3 +118,4 @@
     loadstring(game:HttpGet("https://rawscripts.net/raw/Infinite-Yield_500"))()
 
     end)
+
