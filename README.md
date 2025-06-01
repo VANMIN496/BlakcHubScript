@@ -10,6 +10,16 @@
         Library:ToggleUI()
     end)
 
+    Section:NewButton("Fly V3 Gui", "Fly", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+
+    end)
+
+    Section:NewButton("Chat Spoofer", "Like Sudo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/4cYHvVmc"))()
+
+    end)
+
     Section:NewButton("UNC Test", "UNC", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/unified-naming-convention/NamingStandard/main/UNCCheckEnv.lua", true))()
 
@@ -60,6 +70,11 @@
 
     local Section = Tab:NewSection("Local Script")
 
+    Section:NewButton("Sword Reach", "Make Hitbox BIGGER!", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Severitylol/Universal-Sword-Reach/main/swordreach.lua"))()
+
+    end)
+
     Section:NewToggle("SuperMan", "Super Speed And Super Jump", function(state)
         if state then
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
@@ -94,20 +109,5 @@
     Section:NewButton("Orca + IY", "Execute Orca Hub And IY", function()
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua"))()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Infinite-Yield_500"))()
-
-    end)
-
-    PlayerSection:NewButton("Sword Reach", "Make Hitbox BIGGER!", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Severitylol/Universal-Sword-Reach/main/swordreach.lua"))()
-
-    end)
-
-    localSection:NewButton("Chat Spoofer", "Like Sudo", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/4cYHvVmc"))()
-
-    end)
-
-    localSection:NewButton("Fly V3 Gui", "Fly", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 
     end)
