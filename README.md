@@ -110,9 +110,9 @@
     end)
 
     Section:NewButton("Fast Interact", "No CD", function()
-game:GetService("ProximityPromptService").PromptButtonHoldBegan:Connect(function(prompt)
-  fireproximityprompt(prompt)
-end)
+    game:GetService("ProximityPromptService").PromptButtonHoldBegan:Connect(function(prompt)
+      fireproximityprompt(prompt)
+    end)
 
     end)
 
