@@ -109,6 +109,13 @@
 
     end)
 
+    Section:NewButton("Fast Interact", "No CD", function()
+game:GetService("ProximityPromptService").PromptButtonHoldBegan:Connect(function(prompt)
+  fireproximityprompt(prompt)
+end)
+
+    end)
+
     local Tab = Window:NewTab("Combine")
 
     local Section = Tab:NewSection("Local Script")
