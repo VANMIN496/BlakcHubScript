@@ -10,6 +10,15 @@
         Library:ToggleUI()
     end)
 
+    Section:NewButton("All In One (Isnahamzah)", "By isnahamzah", function()
+    loadstring(game:HttpGet("https://isnahamzahpastebin.tech/loader/isna_scripthub_55"))()
+    wait(1)
+    game.StarterGui:SetCore("SendNotification", {
+    Title = "By isnahamzah",
+    Text = "Use AllInOne",
+    Duration = 6
+    })
+    end)
 
 
     Section:NewButton("Chat Spoofer", "Like Sudo", function()
